@@ -262,14 +262,17 @@ _{Explain here how the data archiving feature will be implemented}_
 
 **Target user profile**:
 
-* has a need to manage a significant number of owners and pets
-* prefer desktop apps over other types
+* is an independent pet day care and/or boarding service manager
+* has a need to manage multiple pet owners and their pets daily
+* prefers desktop apps over other types
 * can type fast
 * prefers typing to mouse interactions
 * is reasonably comfortable using CLI apps
 
-**Value proposition**: manage owners and their pets faster than a typical mouse/GUI driven app
+**Value proposition**: 
 
+* manage pet owners and their pets faster than a typical mouse/GUI driven app
+* optimised for pet day care and boarding service managers who prefer CLI
 
 ### User stories
 
@@ -337,7 +340,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 3. PetLog informs user that the owner was added
 4. PetLog shows a list of owners with details
 
-    Use case ends
+    Use case ends.
 
 **Extensions**
 
@@ -361,22 +364,24 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 3. PetLog informs user that the pet was added to the specified user
 4. PetLog shows the new list of owners with pet added 
 
-    Use case ends
+    Use case ends.
 
 **Extensions**
 
 * 1a. Invalid commands, invalid details
   * 1a1. PetLog shows a relevant error message 
   
-    Use case ends 
+    Use case ends .
 * 1b. Duplicate pet
   * 1b1. PetLog shows a relevant error message
     
-    Use case ends
+    Use case ends.
   
 **Use case: Update Pet Remarks**
 
 **Preconditions: Pet and Owner exists**
+
+**MSS**
 
 1. User update remarks of an existing pet
 2. PetLog updates the remarks
@@ -388,9 +393,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. Missing or invalid indices, unrecognized prefixes, malformed command, repeated prefix
   * 1a1. PetLog shows relevant error message 
 
-    Use case ends 
+    Use case ends.
 
 **Use case: Delete Owner**
+
+**MSS**
 
 1. User requests to delete the owner
 2. PetLog deletes the owner 
@@ -402,9 +409,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. Missing, invalid, out-of-range index, malformed command, unrecognized prefixes
   * 1a1. PetLog shows relevant error message 
 
-    Use case ends
+    Use case ends.
 
 **Use case: Delete Pet**
+
+**MSS**
 
 1. User requests to delete the pet
 2. PetLog deletes the pet
@@ -416,9 +425,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. Missing, invalid, out-of-range index, malformed command, unrecognized prefixes
     * 1a1. PetLog shows relevant error message
 
-      Use case ends
+      Use case ends.
 
  **Use case: Find owner** 
+
+**MSS**
 
 1. User attempts owner search by keywords 
 2. PetLog finds matching owners
@@ -430,14 +441,16 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. No prefixes, unrecognized prefixes, malformed command
   * 1a1. PetLog displays relevant error 
     
-    Use case ends
+    Use case ends.
   
 * 1b. Invalid field contents entered in search
   * 1b1. PetLog displays that there is 0 matches
     
-    Use case ends
+    Use case ends.
 
 **Use case: Find pet**
+
+**MSS**
 
 1. User attempts pet search by keywords
 2. PetLog finds matching pets
@@ -449,14 +462,16 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. No prefixes, unrecognized prefixes, malformed command
     * 1a1. PetLog displays relevant error
 
-      Use case ends
+      Use case ends.
 
 * 1b. Invalid field contents entered in search
     * 1b1. PetLog displays that there is 0 matches
 
-      Use case ends
+      Use case ends.
 
 **Use case: List**
+
+**MSS**
 
 1. User requests to list all records of owners and pets
 2. PetLog displays the list of owners and pets
@@ -467,7 +482,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * 1a. Misspelled command, unnecessary prefix inputs
   * 1a1. PetLog displays a relevant error message
 
-    Use case ends 
+    Use case ends.
 
 *{More may be added}*
 
